@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<siute name="Test Testin">
+
+
+	<test name="Groups Demo">
+		<groups></groups>
+			<define name="all">
+				<include name="no bikes"></include>
+				<include name="sedan"></include>
+				<include name="suv"></include>
+
+			</define>
+			<define name="no bikes">
+
+				<include name="sedan"></include>
+				<include name="suv"></include>
+				<define>
+					<run>
+						<include name="all"></include>
+
+					</run>
+				</define>
+		
+
+		<classes>
+			<class name="com.syntaxPractices.TestNGGrouping">
+			</class>
+		</classes>
+
+	</test>
+
+</siute>
